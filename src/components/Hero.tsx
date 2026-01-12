@@ -1,5 +1,5 @@
 import React from 'react';
-import { ChevronDown, Github, Linkedin, Mail } from 'lucide-react';
+import { ChevronDown, Github, Linkedin, Mail, FileText } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import heroBg from '@/assets/hero-bg.jpg';
 
@@ -53,9 +53,7 @@ const Hero = () => {
           
           {/* Description */}
           <p className="text-lg text-foreground-muted max-w-2xl mx-auto mb-12 leading-relaxed animate-slideInUp delay-400">
-            Passionate about creating innovative web solutions. 
-            I build scalable applications with modern technologies and clean, efficient code.
-            
+            B.Tech IT student passionate about building scalable web applications with React, Next.js, Node.js, and modern technologies. Active contributor to IoT Forum Club.
           </p>
           
           {/* CTA Buttons */}
@@ -65,6 +63,20 @@ const Hero = () => {
               className="bg-gradient-primary hover:shadow-glow hover:scale-105 transition-all duration-300 px-8 py-3 text-lg font-semibold rounded-full"
             >
               View My Work
+            </Button>
+            <Button 
+              variant="outline"
+              className="border-border hover:border-primary hover:bg-card hover:scale-105 transition-all duration-300 px-8 py-3 text-lg font-semibold rounded-full"
+              asChild
+            >
+              <a 
+                href="https://drive.google.com/file/d/1W32ZPoLVCViECj8vM2eCu8uhWSd9NOMH/view?usp=sharing" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <FileText className="w-5 h-5 mr-2" />
+                My Resume
+              </a>
             </Button>
             <Button 
               onClick={() => scrollToSection('contact')}

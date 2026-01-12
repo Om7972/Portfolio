@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Github, Linkedin, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -42,13 +42,13 @@ const Contact = () => {
       icon: Mail,
       label: 'Email',
       value: 'odhumkekar@gmail.com',
-      href: 'mailto:your.email@example.com'
+      href: 'mailto:odhumkekar@gmail.com'
     },
     {
       icon: Phone,
       label: 'Phone',
       value: '+91 7972774586',
-      href: 'tel:+15551234567'
+      href: 'tel:+917972774586'
     },
     {
       icon: MapPin,
@@ -72,10 +72,10 @@ const Contact = () => {
       color: 'hover:text-blue-500'
     },
     {
-      icon: Twitter,
-      label: 'Twitter',
-      href: 'https://twitter.com',
-      color: 'hover:text-blue-400'
+      icon: Instagram,
+      label: 'Instagram',
+      href: 'https://instagram.com',
+      color: 'hover:text-pink-500'
     }
   ];
 

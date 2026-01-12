@@ -23,56 +23,56 @@ const Projects = () => {
   const projects: Project[] = [
     {
       id: 1,
-      title: 'Modern Dashboard Analytics',
-      description: 'A comprehensive analytics dashboard with real-time data visualization and user management.',
-      fullDescription: 'A comprehensive analytics dashboard built with React and Node.js that provides real-time data visualization, user management, and advanced reporting features. The application includes interactive charts, data filtering, and export functionality.',
-      technologies: ['React', 'Node.js', 'MongoDB', 'Chart.js', 'Tailwind CSS'],
+      title: 'EcoWardrobeAI',
+      description: 'An AI-powered sustainable fashion platform that helps users make eco-friendly wardrobe choices.',
+      fullDescription: 'EcoWardrobeAI is an innovative platform that leverages artificial intelligence to promote sustainable fashion choices. The application analyzes clothing items, suggests eco-friendly alternatives, and helps users build a more sustainable wardrobe while reducing fashion waste.',
+      technologies: ['React', 'Next.js', 'AI/ML', 'Tailwind CSS', 'Node.js'],
       image: project1Image,
-      liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com',
+      liveUrl: '#', // Will be updated with Vercel link
+      githubUrl: 'https://github.com/Om7972/EcoWardrobeAI',
       features: [
-        'Real-time data visualization',
-        'Interactive charts and graphs',
-        'User role management',
-        'Data export functionality',
-        'Responsive design',
-        'Dark/Light theme support'
+        'AI-powered clothing analysis',
+        'Sustainable fashion recommendations',
+        'Wardrobe management system',
+        'Eco-impact tracking',
+        'Personalized style suggestions',
+        'Community sharing features'
       ]
     },
     {
       id: 2,
-      title: 'IoT Sensor Dashboard',
-      description: 'Smart IoT dashboard for monitoring and controlling connected devices with real-time updates.',
-      fullDescription: 'An intelligent IoT dashboard that connects and monitors various sensors and devices. Built with modern web technologies and real-time communication protocols to provide instant updates and control capabilities.',
-      technologies: ['Next.js', 'Python', 'WebSocket', 'PostgreSQL', 'Docker'],
+      title: 'OmePilot Auto AI',
+      description: 'An intelligent automation platform powered by AI for streamlined workflows and productivity.',
+      fullDescription: 'OmePilot Auto AI is a cutting-edge automation platform that uses artificial intelligence to automate repetitive tasks and streamline workflows. Built with modern web technologies, it provides an intuitive interface for creating and managing automated processes.',
+      technologies: ['React', 'TypeScript', 'AI Integration', 'Node.js', 'MongoDB'],
       image: project2Image,
-      liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com',
+      liveUrl: '#', // Will be updated with Vercel link
+      githubUrl: 'https://github.com/Om7972/omepilot-auto-ai',
       features: [
-        'Real-time sensor monitoring',
-        'Device control interface',
-        'Historical data analysis',
-        'Alert and notification system',
-        'Mobile-responsive design',
-        'Multi-device support'
+        'AI-powered task automation',
+        'Workflow builder interface',
+        'Real-time process monitoring',
+        'Custom automation triggers',
+        'Integration capabilities',
+        'Analytics dashboard'
       ]
     },
     {
       id: 3,
-      title: 'E-Commerce Platform',
-      description: 'Full-stack e-commerce solution with payment integration and inventory management.',
-      fullDescription: 'A complete e-commerce platform featuring user authentication, product catalog, shopping cart, payment processing, and administrative dashboard for inventory management.',
-      technologies: ['React', 'Express.js', 'Stripe', 'Redis', 'AWS'],
+      title: 'Echo Tutorial',
+      description: 'An interactive learning platform for developers with hands-on tutorials and coding exercises.',
+      fullDescription: 'Echo Tutorial is a comprehensive learning platform designed to help developers master new technologies through interactive tutorials, hands-on exercises, and real-world project examples. The platform offers a structured learning path with progress tracking.',
+      technologies: ['React', 'Next.js', 'Supabase', 'Tailwind CSS', 'TypeScript'],
       image: project3Image,
-      liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com',
+      liveUrl: '#', // Will be updated with Vercel link
+      githubUrl: 'https://github.com/Om7972/echo-tutorial',
       features: [
-        'User authentication & profiles',
-        'Product catalog with search',
-        'Shopping cart & checkout',
-        'Payment processing',
-        'Order tracking',
-        'Admin dashboard'
+        'Interactive code tutorials',
+        'Hands-on coding exercises',
+        'Progress tracking system',
+        'Community discussions',
+        'Project-based learning',
+        'Certificate generation'
       ]
     }
   ];
@@ -176,8 +176,11 @@ const Projects = () => {
             <Button
               variant="outline"
               className="px-8 py-3 text-lg font-semibold rounded-full border-border hover:border-primary hover:bg-card hover:scale-105 transition-all duration-300"
+              asChild
             >
-              View All Projects
+              <a href="https://github.com/Om7972" target="_blank" rel="noopener noreferrer">
+                View All Projects on GitHub
+              </a>
             </Button>
           </div>
         </div>

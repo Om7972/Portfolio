@@ -9,7 +9,9 @@ const Navigation = () => {
   const navItems = [
     { id: 'home', label: 'Home' },
     { id: 'about', label: 'About' },
+    { id: 'skills', label: 'Skills' },
     { id: 'projects', label: 'Projects' },
+    { id: 'education', label: 'Education' },
     { id: 'experience', label: 'Experience' },
     { id: 'contact', label: 'Contact' },
   ];
@@ -56,13 +58,13 @@ const Navigation = () => {
               onClick={() => scrollToSection('home')}
               className="text-2xl font-bold gradient-text hover:scale-105 transition-transform duration-300"
             >
-              Portfolio
+              Om.dev
             </button>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-4">
+            <div className="ml-10 flex items-baseline space-x-2">
               {navItems.map((item) => (
                 <button
                   key={item.id}
