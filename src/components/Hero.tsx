@@ -43,7 +43,7 @@ const Hero = () => {
           
           {/* Name */}
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold mb-6 animate-slideInUp delay-200">
-            <span className="gradient-text">Your Name</span>
+            <span className="gradient-text">Om Dhumkekar</span>
           </h1>
           
           {/* Title */}
@@ -53,8 +53,9 @@ const Hero = () => {
           
           {/* Description */}
           <p className="text-lg text-foreground-muted max-w-2xl mx-auto mb-12 leading-relaxed animate-slideInUp delay-400">
-            Passionate about creating innovative web solutions and IoT systems. 
+            Passionate about creating innovative web solutions. 
             I build scalable applications with modern technologies and clean, efficient code.
+            
           </p>
           
           {/* CTA Buttons */}
@@ -77,7 +78,7 @@ const Hero = () => {
           {/* Social Links */}
           <div className="flex items-center justify-center gap-6 mb-16 animate-slideInUp delay-600">
             <a 
-              href="https://github.com" 
+              href="https://github.com/Om7972" 
               target="_blank" 
               rel="noopener noreferrer"
               className="p-3 rounded-full border border-border hover:border-primary hover:bg-card hover:scale-110 transition-all duration-300 glow-effect"
@@ -85,7 +86,7 @@ const Hero = () => {
               <Github className="w-6 h-6" />
             </a>
             <a 
-              href="https://linkedin.com" 
+              href="https://www.linkedin.com/in/om-dhumkekar-9b1865295/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="p-3 rounded-full border border-border hover:border-primary hover:bg-card hover:scale-110 transition-all duration-300 glow-effect"
@@ -93,7 +94,7 @@ const Hero = () => {
               <Linkedin className="w-6 h-6" />
             </a>
             <a 
-              href="mailto:your.email@example.com"
+              href="mailto:om.22310340@viit.ac.in"
               className="p-3 rounded-full border border-border hover:border-primary hover:bg-card hover:scale-110 transition-all duration-300 glow-effect"
             >
               <Mail className="w-6 h-6" />

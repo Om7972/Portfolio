@@ -24,14 +24,14 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { icon: Github, href: 'https://github.com', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
+    { icon: Github, href: "https://github.com/Om7972", label: 'GitHub' },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/om-dhumkekar-9b1865295/", label: 'LinkedIn' },
     { icon: Twitter, href: 'https://twitter.com', label: 'Twitter' },
-    { icon: Mail, href: 'mailto:your.email@example.com', label: 'Email' },
+    { icon: Mail, href: 'mailto:odhumkekar.@gmail.com', label: 'Email' },
   ];
 
   const skills = [
-    'React', 'Node.js', 'TypeScript', 'Python', 'Java', 'Next.js'
+    'HTML','CSS','React', 'Node.js', 'TypeScript', 'Python', 'Java', 'Next.js'
   ];
 
   return (

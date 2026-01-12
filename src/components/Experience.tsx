@@ -4,9 +4,9 @@ import { Calendar, MapPin, Users, Award } from 'lucide-react';
 const Experience = () => {
   const experience = {
     organization: 'IoT Forum Club',
-    position: 'Active Member & Developer',
+    position: 'Publicity Team Member',
     duration: '2022 - Present',
-    location: 'University Campus',
+    location: 'VIIT',
     type: 'Volunteer Experience',
     description: 'Active participant in IoT Forum Club, contributing to various Internet of Things projects and learning about connected systems, sensor networks, and smart device integration.',
     achievements: [
@@ -17,12 +17,13 @@ const Experience = () => {
       'Mentored junior members in IoT development basics'
     ],
     skills: [
-      'IoT Development',
-      'Arduino Programming',
-      'Raspberry Pi',
-      'Sensor Integration',
-      'MQTT Protocol',
-      'Hardware-Software Integration'
+      'Self Development',
+      'Team Collaboration',
+      'Problem Solving',
+      'Technical Writing',
+      'Marketing',
+      'Event Management',
+      'Communication'
     ],
     projects: [
       {
