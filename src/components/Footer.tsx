@@ -1,5 +1,5 @@
 import React from 'react';
-import { Heart, ArrowUp, Github, Linkedin, Mail, Twitter } from 'lucide-react';
+import { Heart, ArrowUp, Github, Linkedin, Mail, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Footer = () => {
@@ -18,7 +18,9 @@ const Footer = () => {
 
   const quickLinks = [
     { label: 'About', id: 'about' },
+    { label: 'Skills', id: 'skills' },
     { label: 'Projects', id: 'projects' },
+    { label: 'Education', id: 'education' },
     { label: 'Experience', id: 'experience' },
     { label: 'Contact', id: 'contact' },
   ];
@@ -26,12 +28,12 @@ const Footer = () => {
   const socialLinks = [
     { icon: Github, href: "https://github.com/Om7972", label: 'GitHub' },
     { icon: Linkedin, href: "https://www.linkedin.com/in/om-dhumkekar-9b1865295/", label: 'LinkedIn' },
-    { icon: Twitter, href: 'https://twitter.com', label: 'Twitter' },
-    { icon: Mail, href: 'mailto:odhumkekar.@gmail.com', label: 'Email' },
+    { icon: Instagram, href: 'https://instagram.com', label: 'Instagram' },
+    { icon: Mail, href: 'mailto:odhumkekar@gmail.com', label: 'Email' },
   ];
 
   const skills = [
-    'HTML','CSS','React', 'Node.js', 'TypeScript', 'Python', 'Java', 'Next.js'
+    'React', 'Next.js', 'Node.js', 'TypeScript', 'Python', 'Java', 'MongoDB', 'Tailwind CSS'
   ];
 
   return (
@@ -47,11 +49,11 @@ const Footer = () => {
             <div className="lg:col-span-2 space-y-6">
               <div>
                 <h3 className="text-2xl font-bold gradient-text mb-4">
-                  Your Name
+                  Om Dhumkekar
                 </h3>
                 <p className="text-foreground-secondary leading-relaxed max-w-md">
-                  Full Stack Developer passionate about creating innovative web solutions 
-                  and exploring IoT technologies. Always learning, always building.
+                  Full Stack Developer & B.Tech IT student passionate about creating innovative web solutions 
+                  and exploring emerging technologies. Always learning, always building.
                 </p>
               </div>
               
@@ -141,7 +143,7 @@ const Footer = () => {
             <div className="flex items-center gap-2 text-foreground-secondary mb-4 md:mb-0">
               <span>Made with</span>
               <Heart className="w-4 h-4 text-red-500 animate-pulse" />
-              <span>by Your Name © {currentYear}</span>
+              <span>by Om Dhumkekar © {currentYear}</span>
             </div>
             
             <div className="flex items-center gap-6">

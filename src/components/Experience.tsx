@@ -5,16 +5,16 @@ const Experience = () => {
   const experience = {
     organization: 'IoT Forum Club',
     position: 'Publicity Team Member',
-    duration: '2022 - Present',
-    location: 'VIIT',
-    type: 'Volunteer Experience',
-    description: 'Active participant in IoT Forum Club, contributing to various Internet of Things projects and learning about connected systems, sensor networks, and smart device integration.',
+    duration: 'November 2024 – Present',
+    location: 'VIIT, Pune',
+    type: 'Leadership & Volunteer',
+    description: 'Contributing to the IoT Forum Club by actively promoting events, workshops, and activities related to Internet of Things technologies. Working collaboratively with team members to increase club visibility and engagement across the campus.',
     achievements: [
-      'Developed IoT sensor monitoring systems using Arduino and Raspberry Pi',
-      'Collaborated on smart home automation projects',
-      'Participated in IoT workshops and technical sessions',
-      'Contributed to club\'s open-source IoT projects',
-      'Mentored junior members in IoT development basics'
+      'Designed and distributed promotional content for IoT workshops and hackathons',
+      'Coordinated with team members to organize successful club events',
+      'Increased club social media engagement through creative campaigns',
+      'Collaborated on technical documentation and event coverage',
+      'Mentored junior members on effective communication strategies'
     ],
     skills: [
       'Self Development',
@@ -23,21 +23,8 @@ const Experience = () => {
       'Technical Writing',
       'Marketing',
       'Event Management',
-      'Communication'
-    ],
-    projects: [
-      {
-        name: 'Smart Environmental Monitor',
-        description: 'Developed a sensor system to monitor temperature, humidity, and air quality'
-      },
-      {
-        name: 'Home Automation System',
-        description: 'Created a smart home control system with mobile app integration'
-      },
-      {
-        name: 'IoT Weather Station',
-        description: 'Built a comprehensive weather monitoring station with data logging'
-      }
+      'Communication',
+      'Leadership'
     ]
   };
 
@@ -49,14 +36,14 @@ const Experience = () => {
       <div className="absolute bottom-1/4 left-0 w-64 h-64 bg-secondary/5 rounded-full blur-3xl"></div>
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16 animate-slideInUp">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
               My <span className="gradient-text">Experience</span>
             </h2>
             <p className="text-lg text-foreground-muted max-w-2xl mx-auto">
-              Professional and volunteer experiences that shaped my technical journey
+              Leadership and volunteer experiences that shaped my professional journey
             </p>
           </div>
 
@@ -99,7 +86,7 @@ const Experience = () => {
                 <div>
                   <h5 className="text-lg font-semibold mb-4 flex items-center gap-2 text-primary">
                     <Award className="w-5 h-5" />
-                    Key Achievements
+                    Key Contributions
                   </h5>
                   <ul className="space-y-3">
                     {experience.achievements.map((achievement, index) => (
@@ -114,41 +101,23 @@ const Experience = () => {
                     ))}
                   </ul>
                 </div>
-
-                {/* IoT Projects */}
-                <div>
-                  <h5 className="text-lg font-semibold mb-4 text-primary">Notable Projects</h5>
-                  <div className="grid gap-4">
-                    {experience.projects.map((project, index) => (
-                      <div 
-                        key={index}
-                        className="p-4 bg-background-tertiary rounded-lg border border-border hover:border-primary/50 transition-all duration-300 animate-slideInUp"
-                        style={{ animationDelay: `${index * 0.1}s` }}
-                      >
-                        <h6 className="font-semibold text-foreground mb-2">{project.name}</h6>
-                        <p className="text-sm text-foreground-secondary">{project.description}</p>
-                      </div>
-                    ))}
-                  </div>
-                </div>
               </div>
 
               {/* Skills Sidebar */}
               <div className="space-y-6">
                 <div className="bg-card p-6 rounded-xl border border-border">
                   <h5 className="text-lg font-semibold mb-4 gradient-text-accent">
-                    Skills Gained
+                    Skills Developed
                   </h5>
-                  <div className="space-y-3">
+                  <div className="flex flex-wrap gap-2">
                     {experience.skills.map((skill, index) => (
-                      <div 
+                      <span 
                         key={skill}
-                        className="flex items-center gap-3 animate-slideInRight"
+                        className="px-3 py-1 text-sm bg-background-tertiary text-foreground-secondary rounded-full border border-border hover:border-primary hover:text-primary transition-all duration-300 animate-slideInRight"
                         style={{ animationDelay: `${index * 0.1}s` }}
                       >
-                        <div className="w-2 h-2 bg-accent rounded-full"></div>
-                        <span className="text-sm text-foreground-secondary">{skill}</span>
-                      </div>
+                        {skill}
+                      </span>
                     ))}
                   </div>
                 </div>
@@ -156,20 +125,20 @@ const Experience = () => {
                 {/* Impact Stats */}
                 <div className="bg-card p-6 rounded-xl border border-border">
                   <h5 className="text-lg font-semibold mb-4 gradient-text-accent">
-                    Impact & Stats
+                    Impact
                   </h5>
                   <div className="space-y-4">
                     <div className="text-center">
-                      <div className="text-2xl font-bold gradient-text">5+</div>
-                      <div className="text-xs text-foreground-muted">IoT Projects</div>
-                    </div>
-                    <div className="text-center">
-                      <div className="text-2xl font-bold gradient-text">20+</div>
-                      <div className="text-xs text-foreground-muted">Workshop Hours</div>
+                      <div className="text-2xl font-bold gradient-text">Active</div>
+                      <div className="text-xs text-foreground-muted">Current Member</div>
                     </div>
                     <div className="text-center">
                       <div className="text-2xl font-bold gradient-text">10+</div>
-                      <div className="text-xs text-foreground-muted">Team Collaborations</div>
+                      <div className="text-xs text-foreground-muted">Events Organized</div>
+                    </div>
+                    <div className="text-center">
+                      <div className="text-2xl font-bold gradient-text">Team</div>
+                      <div className="text-xs text-foreground-muted">Collaboration</div>
                     </div>
                   </div>
                 </div>
