@@ -5,7 +5,7 @@ const Education = () => {
   const educationData = [
     {
       year: '2023 - 2027',
-      degree: 'B.Tech in Information Technology',
+      degree: 'B.Tech in Computer Engineering',
       institution: "Bract's Vishwakarma Institute Of Information Technology",
       location: 'Pune',
       grade: '7.85 GPA',
@@ -115,7 +115,7 @@ const Education = () => {
                     </div>
                     
                     {/* Description */}
-                    <p className="text-sm text-foreground-secondary leading-relaxed">
+                    <p className="text-sm text-foreground-secondary leading-relaxed text-justify">
                       {edu.description}
                     </p>
                   </div>

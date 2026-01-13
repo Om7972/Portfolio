@@ -129,16 +129,16 @@ const Experience = () => {
                   </h5>
                   <div className="space-y-4">
                     <div className="text-center">
-                      <div className="text-2xl font-bold gradient-text">Active</div>
-                      <div className="text-xs text-foreground-muted">Current Member</div>
-                    </div>
-                    <div className="text-center">
                       <div className="text-2xl font-bold gradient-text">10+</div>
                       <div className="text-xs text-foreground-muted">Events Organized</div>
                     </div>
                     <div className="text-center">
                       <div className="text-2xl font-bold gradient-text">Team</div>
                       <div className="text-xs text-foreground-muted">Collaboration</div>
+                    </div>
+                    <div className="text-center">
+                      <div className="text-sm font-semibold gradient-text">July 2024 – September 2025</div>
+                      <div className="text-xs text-foreground-muted">Timeline</div>
                     </div>
                   </div>
                 </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Heart, ArrowUp, Github, Linkedin, Mail, Instagram } from 'lucide-react';
+import { Heart, ArrowUp, Github, Linkedin, Mail, Instagram, Code2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Footer = () => {
@@ -28,6 +28,7 @@ const Footer = () => {
   const socialLinks = [
     { icon: Github, href: "https://github.com/Om7972", label: 'GitHub' },
     { icon: Linkedin, href: "https://www.linkedin.com/in/om-dhumkekar-9b1865295/", label: 'LinkedIn' },
+    { icon: Code2, href: 'https://leetcode.com/u/tgywuo8NPg/', label: 'LeetCode' },
     { icon: Instagram, href: 'https://instagram.com', label: 'Instagram' },
     { icon: Mail, href: 'mailto:odhumkekar@gmail.com', label: 'Email' },
   ];

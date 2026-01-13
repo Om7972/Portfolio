@@ -20,9 +20,9 @@ const About = () => {
 
           <div className="bg-gradient-card p-8 rounded-2xl border border-border shadow-card animate-slideInUp">
             <h3 className="text-2xl font-semibold mb-6 gradient-text-accent">My Story</h3>
-            <div className="space-y-4 text-foreground-secondary leading-relaxed">
+            <div className="space-y-4 text-foreground-secondary leading-relaxed text-justify">
               <p>
-                I'm <span className="text-primary font-semibold">Om Dhumkekar</span>, a passionate B.Tech Information Technology student at Vishwakarma Institute of Information Technology, Pune. With a strong foundation in full-stack development, I specialize in building scalable web applications using modern technologies like React.js, Next.js, Node.js, and various database systems.
+                I'm <span className="text-primary font-semibold">Om Ajit Dhumkekar</span>, a passionate Third Year Computer Engineering student at Vishwakarma Institute of Information Technology, Pune. With a strong foundation in full-stack development, I specialize in building scalable web applications using modern technologies like React.js, Next.js, Node.js, and various database systems.
               </p>
               <p>
                 My journey in technology started with a curiosity about how digital systems work, which evolved into a deep expertise in Data Structures & Algorithms, Object-Oriented Programming, and Database Management Systems. I actively participate in hackathons and continuously work on projects that solve real-world problems.

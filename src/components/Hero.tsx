@@ -1,9 +1,51 @@
-import React from 'react';
-import { ChevronDown, Github, Linkedin, Mail, FileText } from 'lucide-react';
+import React, { useEffect, useState } from 'react';
+import { ChevronDown, Github, Linkedin, Mail, FileText, Code2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import heroBg from '@/assets/hero-bg.jpg';
 
 const Hero = () => {
+  // Typewriter State
+  const [text, setText] = useState("");
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [loopNum, setLoopNum] = useState(0);
+  const [typingSpeed, setTypingSpeed] = useState(150);
+
+  // Roles to cycle through
+  const roles = [
+    "Full Stack Developer",
+    "Software Engineer",
+    "Programmer and Problem Solver",
+  ];
+
+  useEffect(() => {
+    const handleType = () => {
+      const i = loopNum % roles.length;
+      const fullText = roles[i];
+
+      setText(
+        isDeleting
+          ? fullText.substring(0, text.length - 1)
+          : fullText.substring(0, text.length + 1)
+      );
+
+      // Dynamic typing speed
+      setTypingSpeed(isDeleting ? 50 : 100);
+
+      if (!isDeleting && text === fullText) {
+        // Finished typing word, pause before deleting
+        setTimeout(() => setIsDeleting(true), 2000);
+      } else if (isDeleting && text === "") {
+        // Finished deleting, move to next word
+        setIsDeleting(false);
+        setLoopNum(loopNum + 1);
+      }
+    };
+
+    const timer = setTimeout(handleType, typingSpeed);
+
+    return () => clearTimeout(timer);
+  }, [text, isDeleting, loopNum, typingSpeed, roles]);
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -47,13 +89,13 @@ const Hero = () => {
           </h1>
           
           {/* Title */}
-          <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-foreground-secondary mb-8 animate-slideInUp delay-300">
-            Full Stack Developer & IoT Enthusiast
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-foreground-secondary mb-8 animate-slideInUp delay-300 h-10 md:h-12 flex items-center justify-center">
+            <span className="typing-cursor">I am a {text}</span>
           </h2>
           
           {/* Description */}
           <p className="text-lg text-foreground-muted max-w-2xl mx-auto mb-12 leading-relaxed animate-slideInUp delay-400">
-            B.Tech IT student passionate about building scalable web applications with React, Next.js, Node.js, and modern technologies. Active contributor to IoT Forum Club.
+            Third Year Computer Engineering student passionate about building scalable web applications with React, Next.js, Node.js, and modern technologies. Past contributor to IoT Forum Club.
           </p>
           
           {/* CTA Buttons */}
@@ -94,6 +136,7 @@ const Hero = () => {
               target="_blank" 
               rel="noopener noreferrer"
               className="p-3 rounded-full border border-border hover:border-primary hover:bg-card hover:scale-110 transition-all duration-300 glow-effect"
+              title="GitHub"
             >
               <Github className="w-6 h-6" />
             </a>
@@ -102,12 +145,23 @@ const Hero = () => {
               target="_blank" 
               rel="noopener noreferrer"
               className="p-3 rounded-full border border-border hover:border-primary hover:bg-card hover:scale-110 transition-all duration-300 glow-effect"
+              title="LinkedIn"
             >
               <Linkedin className="w-6 h-6" />
             </a>
             <a 
+              href="https://leetcode.com/u/tgywuo8NPg/"
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="p-3 rounded-full border border-border hover:border-primary hover:bg-card hover:scale-110 transition-all duration-300 glow-effect"
+              title="LeetCode"
+            >
+              <Code2 className="w-6 h-6" />
+            </a>
+            <a 
               href="mailto:om.22310340@viit.ac.in"
               className="p-3 rounded-full border border-border hover:border-primary hover:bg-card hover:scale-110 transition-all duration-300 glow-effect"
+              title="Email"
             >
               <Mail className="w-6 h-6" />
             </a>
