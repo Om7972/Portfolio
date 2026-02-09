@@ -79,6 +79,7 @@ const Hero = () => {
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 animate-slideInUp">
         <div className="max-w-4xl mx-auto">
           {/* Greeting */}
+          <br></br><br></br>
           <p className="text-lg sm:text-xl text-foreground-secondary mb-4 animate-fadeIn delay-100">
             Hello, I'm
           </p>

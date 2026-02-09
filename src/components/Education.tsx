@@ -38,7 +38,7 @@ const Education = () => {
       <div className="absolute inset-0 bg-grid opacity-10"></div>
       <div className="absolute top-1/3 right-0 w-64 h-64 bg-accent/10 rounded-full blur-3xl"></div>
       <div className="absolute bottom-1/3 left-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
-      
+
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-4xl mx-auto">
           {/* Section Header */}
@@ -55,26 +55,23 @@ const Education = () => {
           <div className="relative">
             {/* Timeline Line */}
             <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-1 h-full bg-gradient-to-b from-primary via-secondary to-accent rounded-full"></div>
-            
+
             {educationData.map((edu, index) => (
               <div
                 key={index}
-                className={`relative flex flex-col md:flex-row items-start md:items-center mb-12 animate-slideInUp ${
-                  index % 2 === 0 ? 'md:flex-row-reverse' : ''
-                }`}
+                className={`relative flex flex-col md:flex-row items-start md:items-center mb-12 animate-slideInUp ${index % 2 === 0 ? 'md:flex-row-reverse' : ''
+                  }`}
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
                 {/* Timeline Dot */}
                 <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 -translate-y-0">
-                  <div className={`w-6 h-6 rounded-full border-4 border-background ${
-                    edu.current ? 'bg-accent animate-pulse' : 'bg-primary'
-                  } shadow-glow`}></div>
+                  <div className={`w-6 h-6 rounded-full border-4 border-background ${edu.current ? 'bg-accent animate-pulse' : 'bg-primary'
+                    } shadow-glow`}></div>
                 </div>
-                
+
                 {/* Content Card */}
-                <div className={`ml-10 md:ml-0 w-full md:w-[calc(50%-2rem)] ${
-                  index % 2 === 0 ? 'md:mr-auto md:pl-0 md:pr-8' : 'md:ml-auto md:pl-8 md:pr-0'
-                }`}>
+                <div className={`ml-10 md:ml-0 w-full md:w-[calc(50%-2rem)] ${index % 2 === 0 ? 'md:mr-auto md:pl-0 md:pr-8' : 'md:ml-auto md:pl-8 md:pr-0'
+                  }`}>
                   <div className="bg-gradient-card p-6 rounded-2xl border border-border shadow-card hover:shadow-float transition-all duration-500 card-hover">
                     {/* Year Badge */}
                     <div className="flex items-center gap-2 mb-4">
@@ -86,12 +83,12 @@ const Education = () => {
                         </span>
                       )}
                     </div>
-                    
+
                     {/* Degree */}
                     <h3 className="text-xl font-semibold gradient-text-accent mb-2">
                       {edu.degree}
                     </h3>
-                    
+
                     {/* Institution */}
                     <div className="flex items-center gap-2 mb-2">
                       <GraduationCap className="w-4 h-4 text-foreground-muted" />
@@ -99,13 +96,13 @@ const Education = () => {
                         {edu.institution}
                       </span>
                     </div>
-                    
+
                     {/* Location */}
                     <div className="flex items-center gap-2 mb-4">
                       <MapPin className="w-4 h-4 text-foreground-muted" />
                       <span className="text-sm text-foreground-muted">{edu.location}</span>
                     </div>
-                    
+
                     {/* Grade */}
                     <div className="flex items-center gap-2 mb-4">
                       <Award className="w-4 h-4 text-accent" />
@@ -113,7 +110,7 @@ const Education = () => {
                         Grade: {edu.grade}
                       </span>
                     </div>
-                    
+
                     {/* Description */}
                     <p className="text-sm text-foreground-secondary leading-relaxed text-justify">
                       {edu.description}
