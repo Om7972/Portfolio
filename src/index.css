@@ -219,6 +219,11 @@
 }
 
 /* Keyframe Animations */
+@keyframes float-subtle {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+}
+
 @keyframes float3d {
   0%, 100% {
     transform: translateY(0px) rotateX(0deg) rotateY(0deg);
