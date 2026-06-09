@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import project1Image from '@/assets/project1.jpg';
 import project2Image from '@/assets/project2.jpg';
 import project3Image from '@/assets/project3.jpg';
+import project4Image from '@/assets/project4.jpg';
 
 interface Project {
   id: number;
@@ -23,30 +24,12 @@ const Projects = () => {
   const projects: Project[] = [
     {
       id: 1,
-      title: 'EcoWardrobeAI',
-      description: 'An AI-powered sustainable fashion platform that helps users make eco-friendly wardrobe choices.',
-      fullDescription: 'EcoWardrobeAI is an innovative platform that leverages artificial intelligence to promote sustainable fashion choices. The application analyzes clothing items, suggests eco-friendly alternatives, and helps users build a more sustainable wardrobe while reducing fashion waste.',
-      technologies: ['React', 'Next.js', 'AI/ML', 'Tailwind CSS', 'Node.js'],
-      image: project1Image,
-      liveUrl: '#', // Will be updated with Vercel link
-      githubUrl: 'https://github.com/Om7972/EcoWardrobeAI',
-      features: [
-        'AI-powered clothing analysis',
-        'Sustainable fashion recommendations',
-        'Wardrobe management system',
-        'Eco-impact tracking',
-        'Personalized style suggestions',
-        'Community sharing features'
-      ]
-    },
-    {
-      id: 2,
       title: 'OmePilot Auto AI',
       description: 'An intelligent automation platform powered by AI for streamlined workflows and productivity.',
       fullDescription: 'OmePilot Auto AI is a cutting-edge automation platform that uses artificial intelligence to automate repetitive tasks and streamline workflows. Built with modern web technologies, it provides an intuitive interface for creating and managing automated processes.',
       technologies: ['React', 'TypeScript', 'AI Integration', 'Node.js', 'MongoDB'],
-      image: project2Image,
-      liveUrl: '#', // Will be updated with Vercel link
+      image: project1Image,
+      liveUrl: 'https://omepilot-auto-ai.vercel.app/',
       githubUrl: 'https://github.com/Om7972/omepilot-auto-ai',
       features: [
         'AI-powered task automation',
@@ -58,21 +41,57 @@ const Projects = () => {
       ]
     },
     {
-      id: 3,
-      title: 'Echo Tutorial',
-      description: 'An interactive learning platform for developers with hands-on tutorials and coding exercises.',
-      fullDescription: 'Echo Tutorial is a comprehensive learning platform designed to help developers master new technologies through interactive tutorials, hands-on exercises, and real-world project examples. The platform offers a structured learning path with progress tracking.',
-      technologies: ['React', 'Next.js', 'Supabase', 'Tailwind CSS', 'TypeScript'],
-      image: project3Image,
-      liveUrl: '#', // Will be updated with Vercel link
-      githubUrl: 'https://github.com/Om7972/echo-tutorial',
+      id: 2,
+      title: 'Narayana Kids',
+      description: 'An engaging and interactive educational platform designed specifically for young learners.',
+      fullDescription: 'Narayana Kids provides a safe, fun, and interactive environment for children to learn and grow. Featuring various educational games, progress tracking, and engaging content, it makes learning an enjoyable experience.',
+      technologies: ['React', 'Next.js', 'Tailwind CSS', 'Framer Motion'],
+      image: project2Image,
+      liveUrl: 'https://narayana-kids.vercel.app/',
+      githubUrl: 'https://github.com/Om7972',
       features: [
-        'Interactive code tutorials',
-        'Hands-on coding exercises',
-        'Progress tracking system',
-        'Community discussions',
-        'Project-based learning',
-        'Certificate generation'
+        'Interactive learning modules',
+        'Child-friendly interface',
+        'Progress tracking for parents',
+        'Engaging animations',
+        'Educational games',
+        'Secure environment'
+      ]
+    },
+    {
+      id: 3,
+      title: 'EcoWardrobeAI',
+      description: 'An AI-powered sustainable fashion platform that helps users make eco-friendly wardrobe choices.',
+      fullDescription: 'EcoWardrobeAI is an innovative platform that leverages artificial intelligence to promote sustainable fashion choices. The application analyzes clothing items, suggests eco-friendly alternatives, and helps users build a more sustainable wardrobe while reducing fashion waste.',
+      technologies: ['React', 'Next.js', 'AI/ML', 'Tailwind CSS', 'Node.js'],
+      image: project3Image,
+      liveUrl: 'https://ecowardrobe-ai.onrender.com/',
+      githubUrl: 'https://github.com/Om7972/EcoWardrobeAI',
+      features: [
+        'AI-powered clothing analysis',
+        'Sustainable fashion recommendations',
+        'Wardrobe management system',
+        'Eco-impact tracking',
+        'Personalized style suggestions',
+        'Community sharing features'
+      ]
+    },
+    {
+      id: 4,
+      title: 'MediGuide Sage',
+      description: 'A comprehensive healthcare platform connecting patients with medical professionals effortlessly.',
+      fullDescription: 'MediGuide Sage is an advanced healthcare solution designed to simplify the process of finding and consulting with medical professionals. It features an intuitive booking system, secure medical records management, and telehealth capabilities.',
+      technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Node.js', 'PostgreSQL'],
+      image: project4Image,
+      liveUrl: 'https://mediguide-sage.vercel.app/',
+      githubUrl: 'https://github.com/Om7972',
+      features: [
+        'Doctor discovery and booking',
+        'Secure telemedicine consultations',
+        'Digital health records',
+        'Prescription management',
+        'Real-time notifications',
+        'Patient dashboard'
       ]
     }
   ];
