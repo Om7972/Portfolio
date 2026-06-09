@@ -15,7 +15,7 @@ const certifications = [
     title: 'Java & DSA Specialization',
     org: 'Unstop',
     year: '2024',
-    description: 'Mastered Java programming with advanced Data Structures & Algorithms problem solving.',
+    description: 'Mastered Java programming with advanced Data Structures & Algorithms. Best in problem solving.',
     certificate: '/certificates/java-dsa.pdf',
     icon: '☕',
     accent: 'secondary',
