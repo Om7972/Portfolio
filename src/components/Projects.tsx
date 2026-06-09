@@ -5,6 +5,7 @@ import project1Image from '@/assets/project1.jpg';
 import project2Image from '@/assets/project2.jpg';
 import project3Image from '@/assets/project3.jpg';
 import project4Image from '@/assets/project4.jpg';
+import project5Image from '@/assets/project5.jpg';
 
 interface Project {
   id: number;
@@ -27,7 +28,7 @@ const Projects = () => {
       title: 'OmePilot Auto AI',
       description: 'An intelligent automation platform powered by AI for streamlined workflows and productivity.',
       fullDescription: 'OmePilot Auto AI is a cutting-edge automation platform that uses artificial intelligence to automate repetitive tasks and streamline workflows. Built with modern web technologies, it provides an intuitive interface for creating and managing automated processes.',
-      technologies: ['React', 'TypeScript', 'AI Integration', 'Node.js', 'MongoDB'],
+      technologies: ['React', 'TypeScript', 'AI Integration', 'vercel', 'postgreSQL', 'Supabase', 'Framer Motion'],
       image: project1Image,
       liveUrl: 'https://omepilot-auto-ai.vercel.app/',
       githubUrl: 'https://github.com/Om7972/omepilot-auto-ai',
@@ -45,7 +46,7 @@ const Projects = () => {
       title: 'Narayana Kids',
       description: 'An engaging and interactive educational platform designed specifically for young learners.',
       fullDescription: 'Narayana Kids provides a safe, fun, and interactive environment for children to learn and grow. Featuring various educational games, progress tracking, and engaging content, it makes learning an enjoyable experience.',
-      technologies: ['React', 'Next.js', 'Tailwind CSS', 'Framer Motion'],
+      technologies: ['React', 'Node.js', 'Tailwind CSS', 'vercel', 'Nodemailer'],
       image: project2Image,
       liveUrl: 'https://narayana-kids.vercel.app/',
       githubUrl: 'https://github.com/Om7972',
@@ -63,7 +64,7 @@ const Projects = () => {
       title: 'EcoWardrobeAI',
       description: 'An AI-powered sustainable fashion platform that helps users make eco-friendly wardrobe choices.',
       fullDescription: 'EcoWardrobeAI is an innovative platform that leverages artificial intelligence to promote sustainable fashion choices. The application analyzes clothing items, suggests eco-friendly alternatives, and helps users build a more sustainable wardrobe while reducing fashion waste.',
-      technologies: ['React', 'Next.js', 'AI/ML', 'Tailwind CSS', 'Node.js'],
+      technologies: ['React', 'Typescript', 'JWT', 'Tailwind CSS', 'Node.js'],
       image: project3Image,
       liveUrl: 'https://ecowardrobe-ai.onrender.com/',
       githubUrl: 'https://github.com/Om7972/EcoWardrobeAI',
@@ -81,7 +82,7 @@ const Projects = () => {
       title: 'MediGuide Sage',
       description: 'A comprehensive healthcare platform connecting patients with medical professionals effortlessly.',
       fullDescription: 'MediGuide Sage is an advanced healthcare solution designed to simplify the process of finding and consulting with medical professionals. It features an intuitive booking system, secure medical records management, and telehealth capabilities.',
-      technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Node.js', 'PostgreSQL'],
+      technologies: ['React', 'TypeScript', 'Tailwind CSS', 'MongoDB', 'Kaggle', 'ML'],
       image: project4Image,
       liveUrl: 'https://mediguide-sage.vercel.app/',
       githubUrl: 'https://github.com/Om7972',
@@ -92,6 +93,24 @@ const Projects = () => {
         'Prescription management',
         'Real-time notifications',
         'Patient dashboard'
+      ]
+    },
+    {
+      id: 5,
+      title: 'LoveSome-Summaries',
+      description: 'A smart reading assistant that provides concise, intelligent summaries of articles and documents.',
+      fullDescription: 'LoveSome-Summaries is a powerful application that helps users save time by generating accurate summaries of long texts. Built with modern web technologies, it offers a seamless reading experience and efficient information extraction.',
+      technologies: ['TypeScript', 'React.js', 'Tailwind CSS', 'PostgreSQL', 'Supabase', 'GitHub', 'Render'],
+      image: project5Image,
+      liveUrl: 'https://lovesome-summaries.onrender.com/',
+      githubUrl: 'https://github.com/Om7972/lovesome-summaries',
+      features: [
+        'Automated text summarization',
+        'Clean and readable interface',
+        'User authentication and history',
+        'Cloud-based storage',
+        'Real-time processing',
+        'Responsive design'
       ]
     }
   ];
